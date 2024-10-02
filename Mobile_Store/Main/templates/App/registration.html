@@ -1,0 +1,21 @@
+{% comment %} {% extends "App/base.html" %}  {% endcomment %}
+{% load static %}  <!-- Sửa tag load -->
+
+{% comment %} {% block body_block %} <!-- Đặt block ở đây --> {% endcomment %}
+<link rel="stylesheet" href="{% static 'css/register.css' %}">
+<div class="jumbotron">
+  {% if registered %}
+    <h1 class="h1done">Thank you for registering!</h1>
+    <button class="backupHome" onclick="window.location.href='{% url 'index' %}'">Back to home page</button>
+  {% else %}
+    <h1>Register Here!</h1>
+    <form enctype="multipart/form-data" method="post" class="registerex">
+      {% csrf_token %} 
+      {{ user_form.as_p }}
+      {{ profile_form.as_p }}
+      <input type="submit" value="Register">
+    </form>
+  {% endif %}
+</div>
+
+{% comment %} {% endblock %}  <!-- Kết thúc block ở đây --> {% endcomment %}

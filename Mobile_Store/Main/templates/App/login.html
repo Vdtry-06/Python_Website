@@ -1,0 +1,18 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+<div class="jumbotron">
+    <h1>Login</h1>
+    <form method="POST" class="registerex">
+        {% csrf_token %}
+        <label for="username">Username:</label>
+        <input type="text" name="username" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" required><br>
+
+        <div class="button-group">
+            <input type="submit" value="Login">
+            <a href="{% url 'App:register' %}" class="register-button">Register</a>
+        </div>
+    </form>
+</div>

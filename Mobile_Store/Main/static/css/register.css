@@ -1,0 +1,91 @@
+/* Đặt toàn bộ trang có chiều cao 100% */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+/* Căn chỉnh form */
+form {
+    width: 300px; /* Chiều rộng của form */
+    max-width: 600px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    color: rgb(85, 86, 86);
+}
+
+/* CSS cho tiêu đề */
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #55afc8;
+}
+/* Chỉnh cỡ chữ của label và input */
+.registerex label {
+    font-size: 18px;  /* Tăng/giảm cỡ chữ nhãn */
+}
+
+.registerex input[type="text"],
+.registerex input[type="email"],
+.registerex input[type="password"] {
+    font-size: 16px;  /* Tăng/giảm cỡ chữ trong input */
+    padding: 10px;    /* Thêm khoảng cách bên trong input */
+    width: 100%;      /* Đặt chiều rộng của input theo ý muốn */
+    max-width: 500px; /* Giới hạn chiều rộng tối đa của input */
+    box-sizing: border-box; /* Đảm bảo padding không thay đổi kích thước input */
+    border-radius: 4px; /* Bo tròn các góc của input */
+    border: 1px solid #ccc; /* Màu viền input */
+}
+
+/* Chỉnh kích thước nút đăng ký (submit) */
+input[type="submit"] {
+    font-size: 18px;  /* Tăng/giảm cỡ chữ nút */
+    padding: 12px 20px; /* Thêm khoảng cách bên trong nút */
+    background-color: #2089da;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Đặt nút theo chiều rộng của form */
+    max-width: 200px; /* Giới hạn chiều rộng tối đa */
+}
+
+input[type="submit"]:hover {
+    background-color: #77828a; /* Hiệu ứng hover khi đưa chuột vào nút */
+}
+
+/* Chỉnh kích thước của ảnh profile */
+input[type="file"] {
+    font-size: 14px;
+    padding: 5px;
+}
+
+/* Chỉnh khoảng cách giữa các trường */
+.registerex .form-group {
+    margin-bottom: 20px;
+}
+
+.backupHome {
+    margin-left: 165px; /* Để căn lề trái */
+    background-color: #71cbe4; /* Màu nền */
+    height: 50px; /* Chiều cao */
+    border: 2px solid #71cbe4; /* Định nghĩa đường viền đầy đủ: độ dày, kiểu và màu */
+    border-radius: 6px; /* Bán kính cong của góc */
+    color: white; /* Màu chữ */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Hiển thị con trỏ tay khi hover */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền */
+}
+
+.backupHome:hover {
+    background-color: #59b2c4; /* Màu nền khi hover */
+}
+.h1done {
+    margin-top: -10px;
+}
